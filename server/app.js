@@ -24,6 +24,12 @@ const io = new Server(server, { // io is an instance of the Server class / circu
     }
 });
 
+const secretKey="secretKey"
+
+// can also be used as middleware
+// io.use((socket,next)=>{
+   
+// })
 
 app.get('/',(req,res)=>{
     res.send('hello')
